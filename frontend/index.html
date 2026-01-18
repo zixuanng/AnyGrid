@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="ANYGRID Command - Real-time AI-powered energy management system. Explore smart grid scenarios, monitor power flow, and optimize energy distribution." />
+    <meta name="theme-color" content="#030712" />
+    <title>ANYGRID Command | Real-Time Energy Intelligence</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Preload critical assets -->
+    <style>
+      /* Prevent FOUC */
+      html {
+        background-color: #030712;
+      }
+      
+      /* Smooth loading animation */
+      #root:empty::after {
+        content: '';
+        display: block;
+        width: 48px;
+        height: 48px;
+        margin: 50vh auto;
+        border: 4px solid rgba(99, 102, 241, 0.2);
+        border-top-color: #6366f1;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+      
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
